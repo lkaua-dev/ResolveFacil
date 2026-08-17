@@ -67,15 +67,7 @@ def painel():
 
         elif escolha == "2":
 
-            console.print(
-                Panel(
-                    "[yellow]Login ainda não implementado.[/yellow]",
-                    title="LOGIN",
-                    border_style="yellow",
-                )
-            )
-
-            input("\nPressione ENTER para continuar...")
+            login()
 
         elif escolha == "3":
 
@@ -320,6 +312,34 @@ def cadastro():
 
     input("\nPressione ENTER para voltar ao painel...")
 
+
+# ==========================================================
+# LOGIN (ERRROOOOOOOOOOO)
+# ==========================================================
+def login():
+    login_nome = input("Informe seu nome: ")
+    encontrado = False
+
+    for conta in contas:
+        if login_nome == conta["nome"]:
+            encontrado = True
+            senha_login = input(f"Bem-vindo, {login_nome}! Informe sua senha: ")
+
+            if senha_login == conta["senha"]:
+                print("Senha válida!\nLogin Realizado com sucesso!")
+                input("\nPressione ENTER para continuar...")
+                return True
+            else:
+                print("Senha Incorreta!")
+                input("\nPressione ENTER para voltar ao menu...")
+
+            break
+
+    if not encontrado:
+        print("Nome não existente!")
+        input("\nPressione ENTER para voltar ao menu...")
+
+    return False
 
 # ==========================================================
 # INICIAR SISTEMA

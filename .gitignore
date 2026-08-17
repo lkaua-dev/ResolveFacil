@@ -1,0 +1,102 @@
+# =========================
+# PYTHON
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+
+# =========================
+# AMBIENTES VIRTUAIS
+# =========================
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# =========================
+# VARIÁVEIS DE AMBIENTE
+# =========================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# VS CODE
+# =========================
+
+.vscode/
+*.code-workspace
+
+
+# =========================
+# PYCHARM
+# =========================
+
+.idea/
+
+
+# =========================
+# JUPYTER
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# DADOS LOCAIS
+# =========================
+
+data/*.json
+data/*.csv
+data/*.xlsx
+
+contas.json
+
+
+# =========================
+# BANCO DE DADOS LOCAL
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+# =========================
+# LOGS
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# SISTEMA OPERACIONAL
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+
+# =========================
+# TESTES / COBERTURA
+# =========================
+
+.pytest_cache/
+.coverage
+htmlcov/
